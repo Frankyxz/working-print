@@ -4,11 +4,12 @@
   "description": "WebSocket Client running on local machine",
   "main": "local-client.js",
   "scripts": {
-    "start": "node local-client.js"
+    "start": "nodemon local-client.js"
   },
   "dependencies": {
     "ipp": "^2.0.1",
     "net-snmp": "^3.15.0",
+    "nodemon": "^3.1.7",
     "ping": "^0.4.4",
     "ws": "^8.18.0"
   }

@@ -83,14 +83,19 @@ function EmployeeList() {
         UserName: UserName,
       });
       if (res.status === 200) {
-        swal({
-          title: "Customer created successfully",
-          text: "The customer created successfully.",
-          icon: "success",
-          button: "OK",
-        });
+        // swal({
+        //   title: "Customer created successfully",
+        //   text: "The customer created successfully.",
+        //   icon: "success",
+        //   button: "OK",
+        // });
         if (socket && socket.readyState === WebSocket.OPEN) {
-          socket.send("TEST: Hello from the React app!");
+          const cart = [
+            { id: 1, name: "Product 1", quantity: 2, price: 100 },
+            { id: 2, name: "Product 2", quantity: 1, price: 50 },
+          ];
+
+          socket.send(JSON.stringify(cart));
           alert("Message sent to the server. Waiting for response...");
 
           // Use the browser's printing capabilities
