@@ -56,7 +56,8 @@ wss.on("connection", (ws, req) => {
     console.log("Received:", messageStr);
 
     // Determine if the message is from React
-    const isFromReactApp = req.headers.origin === "https://g-pos.vercel.app";
+    const isFromReactApp =
+      req.headers.origin === "https://working-print.vercel.app";
 
     if (isFromReactApp) {
       console.log("Message from React app:", messageStr);

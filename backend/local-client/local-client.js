@@ -9,7 +9,7 @@ const COMMON_PORTS = [631, 9100, 515];
 let socket;
 
 function connectWebSocket() {
-  socket = new WebSocket("wss://g-pos.onrender.com");
+  socket = new WebSocket("wss://working-print.onrender.com");
 
   socket.on("open", () => {
     console.log("Connected to WebSocket server on Render");
