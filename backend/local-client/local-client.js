@@ -133,9 +133,17 @@ function printLongText() {
 
   // Sample long text to print
   const longText =
-    "This is a long text to print. \n" +
-    "Make sure to handle long texts properly. \n" +
-    "Thank you for using the printer!";
+    "                 DUALTECH             \n" +
+    "Transaction No.:         20241009C0004\n" +
+    "Terminal:                      Cashier\n" +
+    "Cashier:                      	Cashier\n" +
+    "Trans. Date:       10/09/2024/, 3:00PM\n" +
+    "ID. No.:       			          1031231\n" +
+    "Name:       			         Franco Smith\n" +
+    "Initial Balance:      			      25000\n" +
+    "Remaining Balance:      		      55000\n" +
+    "--------------------------------------\n" +
+    "Qty       Desc        Price     Amount\n";
 
   // Create a socket to connect to the printer
   const client = new net.Socket();
