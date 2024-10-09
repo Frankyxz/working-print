@@ -10,7 +10,7 @@ function EmployeeList() {
   const [UserName, setUserName] = useState("");
 
   useEffect(() => {
-    const newSocket = new WebSocket("wss://g-pos.onrender.com");
+    const newSocket = new WebSocket("wss://working-print.onrender.com");
 
     newSocket.onopen = () => {
       console.log("Connected to WebSocket server");
@@ -30,7 +30,7 @@ function EmployeeList() {
       // Implement reconnection logic here
       setTimeout(() => {
         console.log("Attempting to reconnect...");
-        setSocket(new WebSocket("wss://g-pos.onrender.com"));
+        setSocket(new WebSocket("wss://working-print.onrender.com"));
       }, 5000);
     };
 
